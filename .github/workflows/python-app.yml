@@ -21,6 +21,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Group of log lines
       run: |
+            sudo add-apt-repository ppa:deadsnakes/ppa -y
             sudo apt install python3.8 -y
             python3.8 --version
           
